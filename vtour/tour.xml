@@ -1,0 +1,560 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+	
+<!--    Toolbox  -->
+ <include url="toolbox/toolbox.xml" />
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="true"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	 <include url="skin/vtourskin_design_ultra_light.xml" /> 
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+<action name="oculta_layer">
+	set (layer[intro].visible,false);
+	
+</action>
+ <layer name="intro" 
+			url="intro.png"
+			keep="true"
+			
+			scale="0.1"
+			x="10"
+			y="160"
+			edge="center"
+			align="center"
+			onclick="oculta_layer();"
+		zorder="9999"
+		enabled="true"
+		bgcapture="true"
+		visible="true"
+	        />
+	
+	<scene name="scene_sala1" title="sala1" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/sala1.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+
+
+
+<!-- HOTSPOT 1 -->
+  
+<hotspot  name="foto1"
+             url="imagen/colo1.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+              ath="-48.80861711945238" atv="1.0050563005080462" scale="0.02860000000000001" rx="0" ry="0" rz="1.9500000000000004"
+             visible="true"
+
+             />
+
+
+
+<hotspot  name="marco1"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+               ath="-48.75138578501742" atv="1.7752950112826797" scale="0.02850000000000001" rx="0" ry="0" rz="1.6000000000000008"
+             visible="true"
+
+             />
+
+
+<!-- HOTSPOT 2 -->
+  
+<hotspot  name="foto2"
+             url="imagen/colo2.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+               ath="-66.73615528494037" atv="0.647061138108618" scale="0.02860000000000001" rx="0" ry="0" rz="1.3000000000000005"
+             visible="true"
+
+             />
+
+
+
+<hotspot  name="marco2"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+             ath="-66.73733313747567" atv="1.3563693091439033" scale="0.02860000000000001" rx="0" ry="0" rz="1.3000000000000005"
+             visible="true"
+
+             />
+
+
+
+<!-- HOTSPOT 2 -->
+  
+<hotspot  name="fofo3"
+             url="imagen/colo3.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+                 ath="-146.23022021729005" atv="-1.754259308821794" scale="0.03790000000000012" rx="0" ry="0" rz="0.24999999999999967"
+             visible="true"
+
+             />
+
+
+
+<hotspot  name="marco3"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+              ath="-146.42524804294752" atv="-0.5952401032577316" scale="0.03930000000000016" rx="0" ry="0" rz="0.24999999999999967" 
+             visible="true"
+
+             />
+
+
+<hotspot  name="fofo15"
+             url="imagen/foto6.png" 
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+                 ath="-176.72678114918023" atv="-1.8070720342074804" scale="0.03640000000000008" rx="0" ry="24.95000000000022" rz="0"
+             visible="true"
+
+             />
+
+             <hotspot  name="marco15"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+               ath="-176.84103549762705" atv="-0.7830017795239789" scale="0.037000000000000095" rx="-1.850000000000001" ry="24.35000000000021" rz="0.7500000000000001"
+             visible="true"
+
+             />
+
+
+<!-- HOTSPOT 3 -->
+  
+<hotspot  name="fofo3"
+             url="imagen/colo3.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+                 ath="-146.23022021729005" atv="-1.754259308821794" scale="0.03790000000000012" rx="0" ry="0" rz="0.24999999999999967"
+             visible="true"
+
+             />
+
+
+
+<hotspot  name="marco3"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+              ath="-146.42524804294752" atv="-0.5952401032577316" scale="0.03930000000000016" rx="0" ry="0" rz="0.24999999999999967" 
+             visible="true"
+
+             />
+
+            
+<!-- HOTSPOT 4 -->
+  
+<hotspot  name="fofo4"
+             url="imagen/colorxha.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+                 ath="-117.51670897483785" atv="-1.8824028990733424" scale="0.03790000000000012" rx="0" ry="-20.80000000000016" rz="0.24999999999999967"
+             visible="true"
+
+             />
+
+
+<hotspot  name="marco4"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+             ath="-117.57858659384019" atv="-0.7120940403055214" scale="0.0371000000000001" rx="0" ry="-22.400000000000183" rz="-0.050000000000000405"
+             visible="true"
+
+             />
+
+             <!-- HOTSPOT 5 -->
+  
+<hotspot  name="fofo5"
+             url="imagen/olor.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+            
+                ath="-96.8494446614306" atv="-1.660842774117298" scale="0.02820000000000003" rx="-0.09999999999999999" ry="-33.75000000000022" rz="0.6499999999999997"
+             visible="true"
+
+             />
+<hotspot  name="marco5"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+             ath="-96.84955442051347" atv="-0.7274937776889999" scale="0.029200000000000025" rx="-0.09999999999999999" ry="-33.75000000000022" rz="0.6499999999999997"        
+             visible="true"
+
+             />
+
+<hotspot  name="fofo6"
+             url="imagen/fptp4.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+                ath="23.980585191821092" atv="-0.3858869004064864" scale="0.043200000000000335" rx="0" ry="4.599999999999996" rz="0.44999999999999984"
+             visible="true"
+
+             />
+<hotspot  name="marco6"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+            ath="23.38786930914131" atv="1.0151391616272483" scale="0.04510000000000039" rx="0" ry="9.5" rz="1.2500000000000004"     
+             visible="true"
+
+             />
+
+<hotspot  name="fofo17"
+             url="tfg.png"
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+                ath="-8.66712970138093" atv="-0.3401565828803265" scale="0.04030000000000025" rx="-5.099999999999999" ry="36.99999999999993" rz="2.950000000000011"
+             visible="true"
+
+             />
+             
+<hotspot  name="marco17"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+            ath="-9.615347263514309" atv="0.8828102220693747" scale="0.054400000000000656" rx="-3.600000000000004" ry="40.399999999999736" rz="2.7000000000000117"
+             visible="true"
+
+             />
+
+             <hotspot  name="fofo8"
+             url="imagen/colo4.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+                ath="53.169273705168166" atv="-0.13108313265644037" scale="0.04380000000000035" rx="-0.8499999999999264" ry="-11.449999999999976" rz="0.44999999999999984"
+             visible="true"
+
+             />
+<hotspot  name="marco8"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+          ath="52.362226919896045" atv="0.8727889702551396" scale="0.04510000000000039" rx="-2.999999999999998" ry="-17.750000000000117" rz="0"  
+             visible="true"
+
+             />
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="-51.4735218166371" vlookat="9.143306057703427" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/sala1.tiles/preview.jpg" />
+
+		<image if="!(webvr.isenabled OR device.mobilevr)">
+			<cube url="panos/sala1.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1536,3072,6144" />
+		</image>
+
+		<image if="webvr.isenabled OR device.mobilevr">
+			<cube url="panos/sala1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_sala2" title="sala2" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/sala2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+
+
+             <hotspot  name="fofo9"
+             url="imagen/foto.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+                ath="-141.050505921998" atv="-3.7467904581305036" scale="0.066200000000001" rx="0" ry="8.100000000000033" rz="0.44999999999999984"
+             visible="true"
+
+             />
+<hotspot  name="marco9"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+         ath="-141.0586676121374" atv="-2.3381956478302373" scale="0.06760000000000103" rx="-1.0500000000000003" ry="8.100000000000033" rz="0.44999999999999984"  
+             visible="true"
+
+             />
+ <hotspot  name="fofo10"
+             url="imagen/def.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+                ath="-103.4574729412355" atv="-3.3053924939708006" scale="0.060600000000000834" rx="-0.7000000000000042" ry="-29.350000000000076" rz="0.44999999999999984"
+             visible="true"
+
+             />
+<hotspot  name="marco10"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+        ath="-104.00593435493676" atv="-1.6272369637599637" scale="0.06260000000000089" rx="-0.2499999999999999" ry="-30.850000000000072" rz="0.8500000000000001"
+             visible="true"
+
+             />
+
+<hotspot  name="fofo11"
+             url="imagen/marcolor.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+               ath="-178.56626895280402" atv="-3.022973712462049" scale="0.056800000000000725" rx="-3.9499999999999895" ry="40.99999999999949" rz="-0.3"
+             visible="true"
+
+             />
+             <hotspot  name="marco11"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+          ath="-177.3653695932234" atv="-2.206462053160335" scale="0.058500000000000774" rx="-39.9499999999999" ry="-2.1500000000000736" rz="-91.54999999999998"
+             visible="true"
+
+             />
+
+             <hotspot  name="fofo12"
+             url="imagen/hola.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+               ath="46.40764313891981" atv="-1.2318689719532525" scale="0.05460000000000066" rx="0.7000000000000066" ry="1.9999999999994884" rz="0.3"
+             visible="true"
+
+             />
+
+             <hotspot  name="marco12"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+        ath="45.9819178669303" atv="0.15291914720443311" scale="0.053700000000000636" rx="0.7000000000000066" ry="1.9999999999994884" rz="0.3"
+             visible="true"
+
+             />
+
+             <hotspot  name="fofo13"
+             url="imagen/color5.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+              ath="78.70841574074939" atv="-1.4169727999470865" scale="0.07920000000000137" rx="0" ry="-23.00000000000051" rz="0.3"
+             visible="true"
+
+             />
+
+             <hotspot  name="marco13"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+       ath="78.4570198136687" atv="-0.3000473351982828" scale="0.04330000000000119" rx="-0.7500000000000003" ry="-27.450000000000575" rz="0"
+             visible="true"
+
+             />
+
+             <hotspot  name="fofo14"
+             url="imagen/chacolor.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+              ath="98.66672105762748" atv="-0.8957224613623428" scale="0.03260000000000103" rx="0" ry="-49.649999999999636" rz="1.3877787807814457e-17"
+             visible="true"
+
+             />
+
+
+ <hotspot  name="marco14"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+       ath="98.52574222170222" atv="0.1786433162525804" scale="0.034700000000001154" rx="-0.7500000000000003" ry="-50.09999999999961" rz="-1.1500000000000004"
+             visible="true"
+
+             />
+
+              <hotspot  name="fofo15"
+             url="imagen/colordef.png"
+             
+             alpha="1" 
+             zorder="2"
+             distorted="true"
+            
+              ath="-41.276945561169725" atv="-0.5724875197790306" scale="0.024900000000001032" rx="0" ry="-4.150000000000312" rz="1.4500000000000006"
+             visible="true"
+
+             />
+
+             <hotspot  name="marco15"
+             url="marco.png"
+             
+             alpha="1" 
+             zorder="3"
+             distorted="true"
+             
+       ath="-41.23768698982457" atv="0.055134201710259005" scale="0.025000000000001032" rx="0" ry="-4.150000000000312" rz="1.1000000000000003"
+             visible="true"
+
+             />
+
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="59.96552998968316" vlookat="10.183760036677837" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/sala2.tiles/preview.jpg" />
+
+		<image if="!(webvr.isenabled OR device.mobilevr)">
+			<cube url="panos/sala2.tiles/%s/l%l/%0v/l%l_%s_%0v_%0h.jpg" multires="512,768,1536,3072,6144" />
+		</image>
+
+		<image if="webvr.isenabled OR device.mobilevr">
+			<cube url="panos/sala2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+
+</krpano>
